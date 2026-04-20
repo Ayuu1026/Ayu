@@ -1,38 +1,11 @@
 <?php
-
-$nama = "Ayu";
-$umur = 20;
-$tinggi = 147.5;
-$menikah = true;
-$hobi = ["nonton drama", "memasak", "main game"];
-
-echo "nama saya $nama, umur saya $umur, tinggi saya $tinggi, status saya $menikah, hobi saya $hobi[1]";
-echo "<br><br>================<br><br>";
-
-//operator
-$nilai1 = 5;
-$nilai2 = 8;
-$nilai3 = 10;
-$nilai4 = 20;
-$nilai5 = 13;
-
-$hasil = $nilai1 + $nilai2 - $nilai3 * $nilai4 / $nilai5;
-
-echo "$nilai1 + $nilai2 - $nilai3 * $nilai4 / $nilai5 adalah $hasil";
-
-echo "<br><br>================<br><br>";
-//percabangan
-$nilai = 70;
-
-if($nilai >= 85) {
-    echo "grade A";
-} else if($nilai >= 70){
-    echo "grade B";
-}else if($nilai >= 50){
-    echo "grade C";
-}else if($nilai >= 30){
-    echo "grade D";
-}else{
-    echo "grade E";
-}
-?>
+echo "<br><br><a href='materi1.php'>materi 1 : If dan Else</a>";
+echo "<br><br><a href='materi2.php'>materi 2 : Looping</a>";
+echo "<br><br><a href='materi3.php'>materi 3 : Array</a>";
+echo "<br><br><a href='materi4.php'>materi 4 : Function</a>";
+echo "<br><br><a href='materi5.php'>materi 5 : OOP</a>";
+echo "<br><br><a href='materi6.php'>materi 6 : Database</a>";
+echo "<br><br><a href='materi7.php'>materi 7 : Senssion dan Cookie</a>";
+echo "<br><br><a href='materi8.php'>materi 8 : File Handling</a>";
+echo "<br><br><a href='materi9.php'>materi 9 : Error Handling</a>";
+echo "<br><br><a href='materi10.php'>materi 10 : Security</a>";
