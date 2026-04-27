@@ -1,16 +1,51 @@
-<form method="post">
-    masukan angka : <input type="number" name="angka">
-    <input type="submit" name="kirim" value="kirim">
-</form>
-
 <?php
-    if (isset($_POST['angka'])) {
-        $angka = $_POST['angka'];
-        if ($angka % 2 == 0) {
-            echo "Angka $angka adalah GENAP <br>";
-        } else {
-            echo "Angka $angka adalah GANJIL <br>";
-        }
+    function hello(){
+        echo "Selamat Datang di Kelas TIA";
     }
+hello();
+
+echo "<br><br>==================================<br><br>";
+function tambah(int $a, int $b){
+    $hasil = $a + $b;
+    return $hasil;
+}
+
+function kurang(int $a, int $b){
+    $hasil = $a - $b;
+    return $hasil;
+}
+
+function bagi(int $a, int $b){
+    $hasil = $a / $b;
+    return $hasil;
+}
+
+function kali(int $a, int $b){
+    $hasil = $a * $b;
+    return $hasil;
+}
+
+echo "<br><br>===================================<br><br>";
 
 ?>
+
+<form method="POST">
+    Masukkan Angka 1: <input type="number" nama="angka1"><br><br>
+    Masukkan Angka 2: <input type="numer"  nama="angka2"><br><br>
+    <input type="submit" name="kirim" value="kirim">
+</form> 
+
+<?php
+  if(isset($_POST['kirim'])){
+    $newangka1 = $_POST['angka1'];
+    $newangka2 = $_POST['angka2'];
+    echo "Hasil pertambahan: " . tambah($newangka1, $newangka2);
+    echo "<br>";
+    echo "Hasil pengurangan: " . kurang($newangka1, $newangka2);
+    echo "<br>";
+    echo "Hasil perkalian: " . kali($newangka1, $newangka2);
+    echo "<br>";
+    echo "Hasil pembagian: " . bagi($newangka1, $newangka2);
+  }
+
+?> 
